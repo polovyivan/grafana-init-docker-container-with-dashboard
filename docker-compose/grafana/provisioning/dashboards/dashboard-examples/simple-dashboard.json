@@ -24,10 +24,88 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 3,
   "links": [],
   "liveNow": false,
   "panels": [
+    {
+      "datasource": {
+        "type": "testdata",
+        "uid": "P53465F745837BCFD"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 6,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "title": "Random Walk",
+      "type": "timeseries"
+    },
     {
       "aliasColors": {},
       "bars": false,
@@ -40,9 +118,9 @@
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
-        "h": 7,
-        "w": 24,
-        "x": 0,
+        "h": 8,
+        "w": 12,
+        "x": 12,
         "y": 0
       },
       "hiddenSeries": false,
@@ -93,7 +171,7 @@
       ],
       "thresholds": [],
       "timeRegions": [],
-      "title": "Angular Graph",
+      "title": "Streaming Client",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -138,7 +216,7 @@
         "h": 6,
         "w": 24,
         "x": 0,
-        "y": 7
+        "y": 8
       },
       "hiddenSeries": false,
       "id": 2,
@@ -190,19 +268,13 @@
             "uid": "P53465F745837BCFD"
           },
           "refId": "A",
-          "scenarioId": "streaming_client",
-          "stream": {
-            "noise": 10,
-            "speed": 100,
-            "spread": 20,
-            "type": "signal"
-          },
-          "stringInput": ""
+          "scenarioId": "csv_metric_values",
+          "stringInput": "1,20,90,30,5,0"
         }
       ],
       "thresholds": [],
       "timeRegions": [],
-      "title": "Simple dummy streaming example",
+      "title": "CSV Metric Values",
       "tooltip": {
         "shared": true,
         "sort": 0,
